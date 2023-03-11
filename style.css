@@ -327,6 +327,7 @@ html {
   height: 100%;
   object-fit: cover;
   opacity: 0.3;
+  transition: opacity 0.3s;
 }
 
 .controls {
