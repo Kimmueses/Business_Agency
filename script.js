@@ -28,6 +28,12 @@ const playPause = ()=> {
 video.addEventListener('timeupdate', () => {
   const barWidth = video.currentTime/video.duration
   bar.style.width = `${barWidth * 100}%`
+  if (video.ended) {
+    btn.className = 'fa-regular fa-circle-play'
+    video.style.opacity = '.3'
+  }
 })
+
+
 
 // End of Section 2 Video
