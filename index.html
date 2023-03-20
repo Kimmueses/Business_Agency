@@ -4,20 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Agency</title>
+
+  <!-- Linking CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- End of Linking CSS file -->
   
-  <!-- Font Awesome kit -->
+  <!-- Linking Font Awesome kit -->
   <script src="https://kit.fontawesome.com/6fd904218d.js" crossorigin="anonymous"></script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- End of Font Awesome kit -->
+  <!-- End of Linking Font Awesome kit -->
   
-  <!-- Linking CSS file -->
-  <link rel="stylesheet" href="style.css">
-  <!-- End of Linking CSS file -->
+  <!-- Linking swiper -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.css"
+/>
+  <!-- End of Linking swiper -->
 
-  <title>Business Agency</title>
+
 </head>
 <body>
 
@@ -93,9 +101,10 @@
     <section class="section-3">
       <h1 class="section-heading">Pricing</h1>
       <div class="section-heading-line"></div>
-      <div class="pricing-cards-wrapper">
+      <div class="swiper-container">
+      <div class="pricing-cards-wrapper swiper-wrapper">
 
-        <div class="pricing-card">
+        <div class="pricing-card swiper-slide">
           <div class="pricing-card-front">
             <h1 class="pricing-card-heading heading-free">FREE</h1>
             <h3 class="pricing-card-price">$0</h3>
@@ -125,7 +134,7 @@
           </div>
         </div>
 
-        <div class="pricing-card">
+        <div class="pricing-card swiper-slide">
           <div class="pricing-card-front">
             <h1 class="pricing-card-heading heading-basic">BASIC</h1>
             <h3 class="pricing-card-price">$299</h3>
@@ -155,7 +164,7 @@
           </div>
         </div>
 
-        <div class="pricing-card">
+        <div class="pricing-card swiper-slide">
           <div class="pricing-card-front">
             <h1 class="pricing-card-heading heading-standard">STANDARD</h1>
             <h3 class="pricing-card-price">$699</h3>
@@ -185,7 +194,7 @@
           </div>
         </div>
 
-        <div class="pricing-card">
+        <div class="pricing-card swiper-slide">
           <div class="pricing-card-front">
             <h1 class="pricing-card-heading heading-premium">PREMIUM</h1>
             <h3 class="pricing-card-price">$999</h3>
@@ -219,12 +228,13 @@
         </div>
 
       </div>
-
+    </div>
     </section>
     <!-- End of Section 3 -->
   </div>
   
   <!-- Linking js file -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
