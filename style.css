@@ -12,6 +12,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -431,8 +432,9 @@ html {
   background-color: #181b1d;
   border-radius: 1rem;
   box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, 0.7);
-  perspecive: 150rem;
-  -mov-perspective: 150rem;
+
+  perspective: 150rem;
+  -moz-perspective: 150rem;
   position: relative;
 }
 
@@ -445,6 +447,7 @@ html {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -558,6 +561,7 @@ html {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -600,7 +604,7 @@ html {
 }
 
 .contact-wrapper {
-  width: 8%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -797,6 +801,7 @@ html {
 
   .swiper-container {
     width: 100%;
+    
   }
 
   .section-4 {
